@@ -69,6 +69,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController: VideoTableViewCellDelegate {
     
+    /// 跳转全屏(横屏)
     func fullH(view: UIView) {
         let controller = HorizontalFullViewController.instance()
         let transition = controller.transition as! VideoFullTransition
@@ -79,6 +80,7 @@ extension ViewController: VideoTableViewCellDelegate {
         present(controller, animated: true) { }
     }
     
+    /// 跳转全屏(竖屏)
     func fullV(view: UIView) {
         let controller = VerticalFullViewController.instance()
         let transition = controller.transition as! VideoFullTransition
@@ -89,12 +91,13 @@ extension ViewController: VideoTableViewCellDelegate {
         present(controller, animated: true) { }
     }
     
-    func detail(view: UIView) {
+    /// 跳转详情
+    func detail(view: UIView, type: DetailType) {
         let controller = DetailViewController.instance()
         let transition = controller.transition as! VideoDetailTransition
         transition.sourceView = view
         transition.sourceGravity = .resizeAspect
-        controller.type = .horizontal
+        controller.type = type
         controller.modalPresentationStyle = .fullScreen
         controller.transitioningDelegate = transition
         present(controller, animated: true) { }

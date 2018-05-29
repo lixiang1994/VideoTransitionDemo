@@ -23,7 +23,7 @@ extension UIViewController {
     
     func presentWithTransition<T: UIViewController & TransitionTarget>(_ vc: T, completion: (() -> Void)? = nil) {
         vc.transitioningDelegate = vc.transition
-        vc.modalPresentationStyle = .custom
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: completion)
     }
     

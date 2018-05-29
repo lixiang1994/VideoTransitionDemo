@@ -27,6 +27,8 @@ class CommentInputViewController: UIViewController {
     private var sending: Bool = false
     private var closing: Bool = false
     
+    private let maxWordNumber = 100
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,7 +75,9 @@ class CommentInputViewController: UIViewController {
     @IBAction func sendAction(_ sender: UIButton) {
         sending = true
         sender.startLoading(.gray)
-        let content = textView.text.prefix(100).replacingOccurrences(of: "\n", with: " ")
+        let content = textView.text
+            .prefix(maxWordNumber)
+            .replacingOccurrences(of: "\n", with: " ")
         
         delegate?.send(content: content, completion: { [weak self] (result) in
             guard let this = self else { return }
@@ -150,7 +154,7 @@ extension CommentInputViewController: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         guard sending == false else { return false }
         
-        if range.location < 100 {
+        if range.location < maxWordNumber {
             return true
         } else if range.location < textView.text.count {
             // 超过规定字数，只能删除，不能添加

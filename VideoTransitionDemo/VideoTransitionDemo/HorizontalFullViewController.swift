@@ -13,6 +13,7 @@ class HorizontalFullViewController: UIViewController {
     lazy var transition: Transition = {
         loadViewIfNeeded()
         $0.targetView = playerView
+        $0.targetGravity = .resizeAspect
         return $0
     } ( VideoFullTransition() )
     

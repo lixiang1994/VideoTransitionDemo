@@ -41,19 +41,4 @@ extension UIView {
         }
         maskView.removeFromSuperview()
     }
-    
-    func toImage(scale: CGFloat = UIScreen.main.scale) -> UIImage {
-        return layer.toImage(scale: scale)
-    }
-}
-
-extension CALayer {
-    
-    func toImage(scale: CGFloat = UIScreen.main.scale) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(bounds.size, false, scale)
-        render(in: UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image!
-    }
 }

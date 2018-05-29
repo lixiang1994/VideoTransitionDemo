@@ -11,7 +11,7 @@ import UIKit
 protocol VideoTableViewCellDelegate: NSObjectProtocol {
     func fullH(view: UIView)
     func fullV(view: UIView)
-    func detail(view: UIView)
+    func detail(view: UIView, type: DetailType)
 }
 
 class VideoTableViewCell: UITableViewCell {
@@ -23,11 +23,12 @@ class VideoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
     
     @IBAction func detailAction(_ sender: Any) {
-        delegate?.detail(view: playerView)
+        // 为了演示 第二条打开横屏
+        let type: DetailType = indexPath?.row == 1 ? .horizontal : .vertical
+        delegate?.detail(view: playerView, type: type)
     }
     
     @IBAction func fullAction(_ sender: Any) {
