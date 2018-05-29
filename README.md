@@ -38,9 +38,9 @@ Demo中完美还原以上需求, 实现方式具有一定参考价值, 但并不
 在原有页面的`viewWillAppear(_:)`中重新设置`view`的`frame`
 ```
 override func viewWillAppear(_ animated: Bool) {
-super.viewWillAppear(animated)
-// 解决横竖屏切换时 view异常
-view.frame = UIScreen.main.bounds
+    super.viewWillAppear(animated)
+    // 解决横竖屏切换时 view异常
+    view.frame = UIScreen.main.bounds
 }
 ```
 
@@ -49,17 +49,17 @@ view.frame = UIScreen.main.bounds
 重写`UIView`的`layoutSubviews()`方法 获取`bounds.size`的动画对面, 通过`CATransaction`重新设置`Layer`的`frame`属性与`View`的`bounds`同步.
 ```
 override func layoutSubviews() {
-super.layoutSubviews()
+    super.layoutSubviews()
 
-if let animation = layer.animation(forKey: "bounds.size") {
-CATransaction.begin()
-CATransaction.setAnimationDuration(animation.duration)
-CATransaction.setAnimationTimingFunction(animation.timingFunction)
-layer.sublayers?.forEach({ $0.frame = bounds })
-CATransaction.commit()
-} else {
-layer.sublayers?.forEach({ $0.frame = bounds })
-}
+    if let animation = layer.animation(forKey: "bounds.size") {
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(animation.duration)
+        CATransaction.setAnimationTimingFunction(animation.timingFunction)
+        layer.sublayers?.forEach({ $0.frame = bounds })
+        CATransaction.commit()
+    } else {
+        layer.sublayers?.forEach({ $0.frame = bounds })
+    }
 }
 ```
 
