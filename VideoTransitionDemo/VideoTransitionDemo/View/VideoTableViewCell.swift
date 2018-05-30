@@ -26,14 +26,13 @@ class VideoTableViewCell: UITableViewCell {
     }
     
     @IBAction func detailAction(_ sender: Any) {
-        // 为了演示 第二条打开横屏
-        let type: DetailType = indexPath?.row == 1 ? .horizontal : .vertical
+        let type: DetailType = indexPath?.section == 1 ? .horizontal : .vertical
         delegate?.detail(view: playerView, type: type)
     }
     
     @IBAction func fullAction(_ sender: Any) {
         // 为了演示 第二条打开横屏
-        if indexPath?.row == 1 {
+        if indexPath?.section == 1 {
             delegate?.fullH(view: playerView)
         } else {
             delegate?.fullV(view: playerView)
