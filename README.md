@@ -6,6 +6,11 @@
 应项目需求, 实现视频播放并支持从列表到全屏到详情的流程过渡, 并在过渡中保持视频播放状态, 同时横屏视频模式下, 全屏或详情页面时旋转可以自动切换, 返回时顺序跳转.
 Demo中完美还原以上需求, 实现方式具有一定参考价值, 但并不一定适用于其他需求, 仅供参考.
 
+### 预览
+
+![竖屏](https://github.com/lixiang1994/VideoTransitionDemo/blob/master/Resources/demo_v.gif)
+![横屏](https://github.com/lixiang1994/VideoTransitionDemo/blob/master/Resources/demo_h.gif)
+
 ### 概述
 
 通过`UIViewController`的`present/dismiss`进行从视频列表到全屏或者详情页的跳转.
