@@ -51,7 +51,7 @@ override func viewWillAppear(_ animated: Bool) {
 
 #### Q: 动画中 `AVPlayerLayer` 无法和`View`的效果同步
 #### A: 
-重写`UIView`的`layoutSubviews()`方法 获取`bounds.size`的动画对面, 通过`CATransaction`重新设置`Layer`的`frame`属性与`View`的`bounds`同步.
+重写`UIView`的`layoutSubviews()`方法 获取`bounds.size`的动画对象, 通过`CATransaction`重新设置`Layer`的`frame`属性与`View`的`bounds`同步.
 ```
 override func layoutSubviews() {
     super.layoutSubviews()
