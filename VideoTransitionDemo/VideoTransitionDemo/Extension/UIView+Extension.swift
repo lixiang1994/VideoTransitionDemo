@@ -11,7 +11,7 @@ import UIKit
 
 extension UIView {
     
-    func startLoading(_ activityIndicatorStyle: UIActivityIndicatorViewStyle = .white) {
+    func startLoading(_ activityIndicatorStyle: UIActivityIndicatorView.Style = .white) {
         stopLoading()
         
         let maskView = UIView(frame: bounds)
@@ -25,7 +25,7 @@ extension UIView {
         }
         maskView.backgroundColor = backgroundColor
         
-        let load = UIActivityIndicatorView(activityIndicatorStyle: activityIndicatorStyle)
+        let load = UIActivityIndicatorView(style: activityIndicatorStyle)
         
         maskView.addSubview(load)
         load.center = maskView.center

@@ -41,7 +41,7 @@ class CommentInputViewController: UIViewController {
     
     private func setup() {
         textView.font = .systemFont(ofSize: 14.0)
-        textView.textContainerInset = UIEdgeInsetsMake(10.5, 8, 10.5, 8)
+        textView.textContainerInset = UIEdgeInsets(top: 10.5, left: 8, bottom: 10.5, right: 8)
     }
     
     private func setupLayout() {
@@ -52,7 +52,7 @@ class CommentInputViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillChangeFrame),
-            name: .UIKeyboardWillChangeFrame,
+            name: UIResponder.keyboardWillChangeFrameNotification,
             object: nil
         )
     }
@@ -62,10 +62,10 @@ class CommentInputViewController: UIViewController {
             return
         }
         guard
-            let duration = info[UIKeyboardAnimationDurationUserInfoKey] as?TimeInterval,
-            let curveRaw = info[UIKeyboardAnimationCurveUserInfoKey] as? Int,
-            let curve = UIViewAnimationCurve(rawValue: curveRaw),
-            let endRect = info[UIKeyboardFrameEndUserInfoKey] as? CGRect else {
+            let duration = info[UIResponder.keyboardAnimationDurationUserInfoKey] as?TimeInterval,
+            let curveRaw = info[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int,
+            let curve = UIView.AnimationCurve(rawValue: curveRaw),
+            let endRect = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
             return
         }
         
@@ -120,11 +120,13 @@ class CommentInputViewController: UIViewController {
 
 extension CommentInputViewController {
     
-    private func handleKeyboard(duration: TimeInterval, curve: UIViewAnimationCurve, endRect: CGRect) {
-        let closing = self.closing
+    private func handleKeyboard(duration: TimeInterval, curve: UIView.AnimationCurve, endRect: CGRect) {
+        var closing = self.closing
         let bounds = UIScreen.main.bounds
         let hide = endRect.origin.y == bounds.height || endRect.origin.y == bounds.width
         if hide {
+            closing = true
+            self.closing = closing
             bottomConstraint.constant = -editHeightConstraint.constant
         } else {
             bottomConstraint.constant = endRect.height

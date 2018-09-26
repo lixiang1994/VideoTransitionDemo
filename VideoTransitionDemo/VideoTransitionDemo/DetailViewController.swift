@@ -47,7 +47,7 @@ class DetailViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(deviceOrientationDidChange),
-            name: .UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil
         )
     }
@@ -57,7 +57,7 @@ class DetailViewController: UIViewController {
         
         NotificationCenter.default.removeObserver(
             self,
-            name: .UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil
         )
     }

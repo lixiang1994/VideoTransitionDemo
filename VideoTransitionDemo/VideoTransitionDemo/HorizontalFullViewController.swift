@@ -62,7 +62,7 @@ class HorizontalFullViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(deviceOrientationDidChange),
-            name: .UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil
         )
     }
