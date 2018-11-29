@@ -61,6 +61,9 @@ class CommentInputViewController: UIViewController {
         guard let info = notify.userInfo else {
             return
         }
+        guard let local = info[UIResponder.keyboardIsLocalUserInfoKey] as? Int, local == 1 else {
+            return
+        }
         guard
             let duration = info[UIResponder.keyboardAnimationDurationUserInfoKey] as?TimeInterval,
             let curveRaw = info[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int,
@@ -123,7 +126,8 @@ extension CommentInputViewController {
     private func handleKeyboard(duration: TimeInterval, curve: UIView.AnimationCurve, endRect: CGRect) {
         var closing = self.closing
         let bounds = UIScreen.main.bounds
-        let hide = endRect.origin.y == bounds.height || endRect.origin.y == bounds.width
+        let offset = endRect.origin.y.rounded()
+        let hide = offset == bounds.height || offset == bounds.width
         if hide {
             closing = true
             self.closing = closing
