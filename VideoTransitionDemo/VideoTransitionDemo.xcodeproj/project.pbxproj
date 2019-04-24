@@ -14,8 +14,6 @@
 		C9498EC620AE651200C12574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9498EC420AE651200C12574 /* Main.storyboard */; };
 		C9498EC820AE651300C12574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9498EC720AE651300C12574 /* Assets.xcassets */; };
 		C9498ECB20AE651300C12574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9498EC920AE651300C12574 /* LaunchScreen.storyboard */; };
-		C9498ED620AE651300C12574 /* VideoTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498ED520AE651300C12574 /* VideoTransitionDemoTests.swift */; };
-		C9498EE120AE651300C12574 /* VideoTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498EE020AE651300C12574 /* VideoTransitionDemoUITests.swift */; };
 		C9498EEF20AE681100C12574 /* HorizontalFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498EEE20AE681100C12574 /* HorizontalFullViewController.swift */; };
 		C9498EF120AE682500C12574 /* VerticalFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498EF020AE682500C12574 /* VerticalFullViewController.swift */; };
 		C9498EF320AE683700C12574 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498EF220AE683700C12574 /* DetailViewController.swift */; };
@@ -30,23 +28,6 @@
 		C9E38DE920B412A6000A3B5B /* VideoCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E38DE820B412A6000A3B5B /* VideoCommentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C9498ED220AE651300C12574 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9498EB520AE651200C12574 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9498EBC20AE651200C12574;
-			remoteInfo = VideoTransitionDemo;
-		};
-		C9498EDD20AE651300C12574 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9498EB520AE651200C12574 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9498EBC20AE651200C12574;
-			remoteInfo = VideoTransitionDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		C92EC32F20BBA43500B26F00 /* Inch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
 		C92EC33120BBAF4500B26F00 /* CommentInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentInputViewController.swift; sourceTree = "<group>"; };
@@ -57,10 +38,8 @@
 		C9498EC720AE651300C12574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9498ECA20AE651300C12574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9498ECC20AE651300C12574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9498ED120AE651300C12574 /* VideoTransitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTransitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9498ED520AE651300C12574 /* VideoTransitionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTransitionDemoTests.swift; sourceTree = "<group>"; };
 		C9498ED720AE651300C12574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9498EDC20AE651300C12574 /* VideoTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9498EE020AE651300C12574 /* VideoTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTransitionDemoUITests.swift; sourceTree = "<group>"; };
 		C9498EE220AE651300C12574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9498EEE20AE681100C12574 /* HorizontalFullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFullViewController.swift; sourceTree = "<group>"; };
@@ -85,20 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9498ECE20AE651300C12574 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9498ED920AE651300C12574 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				C9498EBD20AE651200C12574 /* VideoTransitionDemo.app */,
-				C9498ED120AE651300C12574 /* VideoTransitionDemoTests.xctest */,
-				C9498EDC20AE651300C12574 /* VideoTransitionDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,42 +182,6 @@
 			productReference = C9498EBD20AE651200C12574 /* VideoTransitionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C9498ED020AE651300C12574 /* VideoTransitionDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9498EE820AE651300C12574 /* Build configuration list for PBXNativeTarget "VideoTransitionDemoTests" */;
-			buildPhases = (
-				C9498ECD20AE651300C12574 /* Sources */,
-				C9498ECE20AE651300C12574 /* Frameworks */,
-				C9498ECF20AE651300C12574 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9498ED320AE651300C12574 /* PBXTargetDependency */,
-			);
-			name = VideoTransitionDemoTests;
-			productName = VideoTransitionDemoTests;
-			productReference = C9498ED120AE651300C12574 /* VideoTransitionDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C9498EDB20AE651300C12574 /* VideoTransitionDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9498EEB20AE651300C12574 /* Build configuration list for PBXNativeTarget "VideoTransitionDemoUITests" */;
-			buildPhases = (
-				C9498ED820AE651300C12574 /* Sources */,
-				C9498ED920AE651300C12574 /* Frameworks */,
-				C9498EDA20AE651300C12574 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9498EDE20AE651300C12574 /* PBXTargetDependency */,
-			);
-			name = VideoTransitionDemoUITests;
-			productName = VideoTransitionDemoUITests;
-			productReference = C9498EDC20AE651300C12574 /* VideoTransitionDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -267,17 +194,7 @@
 				TargetAttributes = {
 					C9498EBC20AE651200C12574 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
-					};
-					C9498ED020AE651300C12574 = {
-						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
-						TestTargetID = C9498EBC20AE651200C12574;
-					};
-					C9498EDB20AE651300C12574 = {
-						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
-						TestTargetID = C9498EBC20AE651200C12574;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -295,8 +212,6 @@
 			projectRoot = "";
 			targets = (
 				C9498EBC20AE651200C12574 /* VideoTransitionDemo */,
-				C9498ED020AE651300C12574 /* VideoTransitionDemoTests */,
-				C9498EDB20AE651300C12574 /* VideoTransitionDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,20 +224,6 @@
 				C9498ECB20AE651300C12574 /* LaunchScreen.storyboard in Resources */,
 				C9498EC820AE651300C12574 /* Assets.xcassets in Resources */,
 				C9498EC620AE651200C12574 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9498ECF20AE651300C12574 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9498EDA20AE651300C12574 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,36 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9498ECD20AE651300C12574 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9498ED620AE651300C12574 /* VideoTransitionDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9498ED820AE651300C12574 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9498EE120AE651300C12574 /* VideoTransitionDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C9498ED320AE651300C12574 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9498EBC20AE651200C12574 /* VideoTransitionDemo */;
-			targetProxy = C9498ED220AE651300C12574 /* PBXContainerItemProxy */;
-		};
-		C9498EDE20AE651300C12574 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9498EBC20AE651200C12574 /* VideoTransitionDemo */;
-			targetProxy = C9498EDD20AE651300C12574 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9498EC420AE651200C12574 /* Main.storyboard */ = {
@@ -531,7 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -550,90 +422,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C9498EE920AE651300C12574 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GNXU2LRUU;
-				INFOPLIST_FILE = VideoTransitionDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoTransitionDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoTransitionDemo.app/VideoTransitionDemo";
-			};
-			name = Debug;
-		};
-		C9498EEA20AE651300C12574 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GNXU2LRUU;
-				INFOPLIST_FILE = VideoTransitionDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoTransitionDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoTransitionDemo.app/VideoTransitionDemo";
-			};
-			name = Release;
-		};
-		C9498EEC20AE651300C12574 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GNXU2LRUU;
-				INFOPLIST_FILE = VideoTransitionDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoTransitionDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VideoTransitionDemo;
-			};
-			name = Debug;
-		};
-		C9498EED20AE651300C12574 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GNXU2LRUU;
-				INFOPLIST_FILE = VideoTransitionDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoTransitionDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VideoTransitionDemo;
 			};
 			name = Release;
 		};
@@ -654,24 +444,6 @@
 			buildConfigurations = (
 				C9498EE620AE651300C12574 /* Debug */,
 				C9498EE720AE651300C12574 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9498EE820AE651300C12574 /* Build configuration list for PBXNativeTarget "VideoTransitionDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9498EE920AE651300C12574 /* Debug */,
-				C9498EEA20AE651300C12574 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9498EEB20AE651300C12574 /* Build configuration list for PBXNativeTarget "VideoTransitionDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9498EEC20AE651300C12574 /* Debug */,
-				C9498EED20AE651300C12574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
