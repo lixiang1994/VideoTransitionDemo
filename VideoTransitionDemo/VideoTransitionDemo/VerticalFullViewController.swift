@@ -51,7 +51,7 @@ class VerticalFullViewController: UIViewController {
     }
     
     private func setupLayout() {
-        statusHeightConstraint.constant = CGFloat(20).i58full(44)
+        statusHeightConstraint.constant = CGFloat(20).ifull(44)
     }
     
     private func gotoDetail() {

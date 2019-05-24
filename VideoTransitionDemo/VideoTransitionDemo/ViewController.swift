@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         // 为了解决横竖屏切换时 SafeArea变动导致的布局问题
         // 这里所有的布局尽量不要使用SafeArea
-        topConstraint.constant = CGFloat(20).i58full(44)
+        topConstraint.constant = CGFloat(20).ifull(44)
         
         player.play()
     }

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C92EC33020BBA43500B26F00 /* Inch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92EC32F20BBA43500B26F00 /* Inch.swift */; };
+		C92451A02297A20A005EC0FA /* Inch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924519E2297A20A005EC0FA /* Inch.swift */; };
+		C92451A12297A20A005EC0FA /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924519F2297A20A005EC0FA /* Auto.swift */; };
 		C92EC33220BBAF4500B26F00 /* CommentInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92EC33120BBAF4500B26F00 /* CommentInputViewController.swift */; };
 		C9498EC120AE651200C12574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498EC020AE651200C12574 /* AppDelegate.swift */; };
 		C9498EC320AE651200C12574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9498EC220AE651200C12574 /* ViewController.swift */; };
@@ -29,7 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C92EC32F20BBA43500B26F00 /* Inch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
+		C924519E2297A20A005EC0FA /* Inch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
+		C924519F2297A20A005EC0FA /* Auto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
 		C92EC33120BBAF4500B26F00 /* CommentInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentInputViewController.swift; sourceTree = "<group>"; };
 		C9498EBD20AE651200C12574 /* VideoTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9498EC020AE651200C12574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +148,8 @@
 		C9E38DE620B40D93000A3B5B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C92EC32F20BBA43500B26F00 /* Inch.swift */,
+				C924519F2297A20A005EC0FA /* Auto.swift */,
+				C924519E2297A20A005EC0FA /* Inch.swift */,
 				C9498EF620AE6C0F00C12574 /* StoryBoard.swift */,
 			);
 			path = Utils;
@@ -237,11 +240,11 @@
 				C9ABF09320AE72C900061EDF /* Transition.swift in Sources */,
 				C9E38DE920B412A6000A3B5B /* VideoCommentTableViewCell.swift in Sources */,
 				C9498EEF20AE681100C12574 /* HorizontalFullViewController.swift in Sources */,
-				C92EC33020BBA43500B26F00 /* Inch.swift in Sources */,
 				C9498EC320AE651200C12574 /* ViewController.swift in Sources */,
 				C9ABF09920AECB7A00061EDF /* PlayerView.swift in Sources */,
 				C9E38DE420B40AB3000A3B5B /* CAMediaTimingFunction+Extension.swift in Sources */,
 				C9ABF09120AE71E600061EDF /* VideoFullTransition.swift in Sources */,
+				C92451A02297A20A005EC0FA /* Inch.swift in Sources */,
 				C9498EF320AE683700C12574 /* DetailViewController.swift in Sources */,
 				C92EC33220BBAF4500B26F00 /* CommentInputViewController.swift in Sources */,
 				C9ABF09720AEB06F00061EDF /* VideoDetailTransition.swift in Sources */,
@@ -250,6 +253,7 @@
 				C9498EC120AE651200C12574 /* AppDelegate.swift in Sources */,
 				C9498EF720AE6C0F00C12574 /* StoryBoard.swift in Sources */,
 				C9498EF520AE694700C12574 /* VideoTableViewCell.swift in Sources */,
+				C92451A12297A20A005EC0FA /* Auto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
